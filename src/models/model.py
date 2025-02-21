@@ -1,6 +1,6 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
-from config import Config_Model,MODEL_OPTIONS
+from src.models.config import Config_Model,MODEL_OPTIONS
 
 def cargar_modelo(model_name):
     

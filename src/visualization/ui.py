@@ -1,6 +1,6 @@
 import streamlit as st
-from model import generar_receta
-from config import MODEL_OPTIONS 
+from src.models.model import generar_receta
+from src.models.config import MODEL_OPTIONS 
 
 def main():
     
