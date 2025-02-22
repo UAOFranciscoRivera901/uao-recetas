@@ -171,9 +171,3 @@ cython_debug/
 .pypirc
 
 #personalizados
-conv_MLP_84.h5
-DICOM/
-JPG/
-*.JPG
-*.CSV
-*.PDF

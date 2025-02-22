@@ -139,42 +139,27 @@ La Dockerización es el proceso de empaquetar una aplicación junto con todas su
    
 Docker File es un archivo de texto que contiene una serie de instrucciones para construir una imagen de Docker, este se un archivo de texto que contiene una serie de instrucciones para construir una imagen de Docker, este archivo debe estar dentro de la raíz del proyecto y se configura de la siguiente manera:
 
-- Se usa una imagen base (se especifica la versión de Python) - (FROM python:3.11.2)
-- Se instalan dependencias necesarias: (OpenCV y Xvfb
-RUN apt-get update -y && \
-    apt-get install -y \
-    python3-tk \
-    x11-utils)
-- Se establece el directorio de trabajo dentro del contenedor
- (WORKDIR /home/src)
-- Se copian los archivos del proyecto contenedor
-( COPY . /home/src/) 
-- Se instalan los requirements o dependencias necesarias
-( RUN pip install -r requirements.txt)
-- Configura el DISPLAY para apuntar al host de Windows
-(ENV DISPLAY=host.docker.internal:0.0)
-- Se establece el comando para ejecutar la aplicación
-( CMD ["python", "main.py"] )
+- Se usa una imagen base (se especifica la versión de Python) - (FROM python:3.11.9-slim)
+- Se instalan dependencias necesarias anexas en el requirements.txt
 
 2. Crear la imagen
 
-La imagen es un archivo liviano, autónomo y ejecutable que incluye todo lo necesario para ejecutar una aplicación o servicio. Este archivo contiene el código de la aplicación, las bibliotecas necesarias, dependencias, herramientas, configuraciones y el sistema operativo base.
+La imagen es un archivo plantilla preconfigurado y portable que nos permite garantizar el mismo entorno de ejecucion para la aplicación
 
 Para crear la imagen, sigue estos pasos
 
 - Abre la terminal de tu sistema operativo o en VS CODE
 - Navega al directorio del proyecto donde se encuentra el Dockerfile. Puedes usar el comando cd para cambiar de directorio.
-- crea la imagen usando el siguiente comando Docker build –t nombre de la imagen.
+- crea la imagen usando el siguiente comando 
+    Docker build –t [nombre_imagen] .
 
 4. Iniciar la imagen y crear el contenedor Docker
 
-Para ejecutar la imagen y crear el contenedor Docker se usa el siguiente comando
+Para ejecutar la imagen y crear el contenedor Docker se usa el siguiente comando en el cual -p puerto_imagen:puerto_host
+Para el ejercicio el puerto de la aplicación es 8501 
+- crear el contenedor con el siguiente comando
+docker run -d -p 8501:8501 [nombre_imagen]
 
-docker run -it --rm "nombre de la iamgen"
-
-Las imagenes para probar esta en home/src/data/raw como se ve en la siguiente imagen
-
-![imagen_2](Images/load.PNG)
 
 Bibliografía
 https://docs.docker.com/get-started/docker-overview/
@@ -186,4 +171,4 @@ https://docs.oracle.com/cd/E37929_01/html/E36693/gmcdr.html
 - Francisco Javier Rivera Rozo
 - Carlos Armando Daza Rendón
 - Andrés Felipe Coral
-- Alejandro Sànchez Murillo
+- Alejandro Sánchez Murillo
