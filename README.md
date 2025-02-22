@@ -98,29 +98,38 @@ Para ejecutar correctamente la herramienta de detección de neumonía, siga los 
 
 # Uso de la interfaz gráfica
 
-Al ejecutar el script detector_neumonia.py, se abrirá una ventana con la interfaz gráfica, la cual debe verse de la siguiente manera:
+Paso 1: Ejecutar la aplicación
+Abrir una terminal o línea de comandos en la carpeta donde se encuentra el archivo app.py.
+Escribir el siguiente comando y presionar Enter:
+- streamlit run app.py
+Esto abrirá automáticamente la interfaz gráfica en el navegador.
 
-![interfaz 1](Images/Interfaz_1.PNG)
+Paso 2: Seleccionar el modelo de generación
+En la parte superior de la interfaz, habrá un menú desplegable con las opciones de modelos de lenguaje disponibles.
+El usuario debe seleccionar el modelo con el que desea generar recetas.
 
-Siga los siguientes pasos
+Paso 3: Ingresar los ingredientes
+En la caja de texto, el usuario debe escribir los ingredientes que tiene disponibles, separados por comas.
+Ejemplo:
+pollo, arroz, cebolla, zanahoria
+Si no ingresa ingredientes y presiona el botón, se mostrará un mensaje de advertencia.
 
-1. Escriba la cédula del paciente en la casilla correspondiente.
-2. Haga clic en el botón "Cargar Imagen" y seleccione la radiografía de tórax desde su ordenador. La imagen puede estar en formato .dcm (DICOM) u otros formatos comunes como JPEG, PNG, etc.Una vez cargada la imagen, debería verla en la parte izquierda de la interfaz tal como se ve a continuación
+Paso 4: Generar la receta
+Presionar el botón "Generar Receta".
+La aplicación procesará los ingredientes y enviará la solicitud al modelo seleccionado.
 
-![interfaz 2](Images/carga.PNG)
+Paso 5: Visualizar la receta
+En la parte inferior de la interfaz, se mostrará la receta generada por el modelo.
+La receta incluirá los pasos de preparación basados en los ingredientes ingresados.
 
-3. Haga clic en el botón "Predecir" para ejecutar el modelo y obtener el resultado.Tras la predicción, verá lo siguiente:
+Paso 6: Modificar ingredientes o modelo (opcional)
+Si el usuario no está satisfecho con la receta, puede:
+Cambiar los ingredientes y presionar nuevamente el botón "Generar Receta".
+Seleccionar otro modelo en el menú desplegable y probar con diferentes configuraciones.
 
-![interfaz 3](Images/resultado.PNG)
-
-- Imagen de la radiografía en la parte izquierda de la pantalla.
-- Imagen con el mapa de calor en la parte derecha, destacando las áreas más influyentes en la predicción.
-- El resultado predicho por el modelo (bacteriana, viral, o neumonía).
-- El valor de probabilidad en porcentaje con el que el modelo determinó la clasificación.
-
-4. Si lo desea, puede guardar los datos obtenidos haciendo clic en el botón "Guardar". Esto generará un archivo llamado "historial.csv" con los resultados.
-5. Puede guardar una copia del reporte visual generado por el entorno haciendo clic en el botón "PDF". Esto creará un archivo en formato PDF y JPG con la captura de la interfaz y los resultados de la predicción.
-6. Si necesita realizar una corrección o una nueva predicción, puede borrar todos los datos ingresados haciendo clic en el botón "Borrar".
+Paso 7: Cerrar la aplicación
+Para cerrar la aplicación, simplemente debe cerrar la pestaña del navegador.
+En la terminal, presionar Ctrl + C para detener la ejecución de Streamlit.
 
 # Dockerización
 
@@ -178,13 +187,3 @@ https://docs.oracle.com/cd/E37929_01/html/E36693/gmcdr.html
 - Carlos Armando Daza Rendón
 - Andrés Felipe Coral
 - Alejandro Sànchez Murillo
-
-   
-
-
-
-
-
-
-
-
