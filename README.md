@@ -102,7 +102,7 @@ Paso 1: Seleccionar el modelo de generación
 En la parte superior de la interfaz, habrá un menú desplegable con las opciones de modelos de lenguaje disponibles.
 El usuario debe seleccionar el modelo con el que desea generar recetas.
 
-![imagen 1](images/imagen_1.PNG)
+![imagen 1](images/imagen_1.png)
 
 Paso 2: Ingresar los ingredientes
 En la caja de texto, el usuario debe escribir los ingredientes que tiene disponibles, separados por comas.
