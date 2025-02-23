@@ -1,14 +1,16 @@
 import streamlit as st
 from src.models.model import generar_receta
-from src.models.config import MODEL_OPTIONS 
+from src.models.config import MODEL_OPTIONS
 
 def main():
+    """Interfaz principal del generador de recetas usando Streamlit."""
     
-    st.title("🍽️✨ Generador de Receta✨🍽️")
-    selected_model = st.selectbox("Selecciona un modelo:", list(MODEL_OPTIONS .keys()))
-    model_name = MODEL_OPTIONS [selected_model]
-    st.write(f"🤖Modelo seleccionado: **{model_name}🤖**")
-    st.write("Introduce ingredientes y se  generará una receta.")
+    st.title("🍽️✨ Generador de Receta ✨🍽️")
+    
+    selected_model = st.selectbox("Selecciona un modelo:", list(MODEL_OPTIONS.keys()))
+    model_name = MODEL_OPTIONS[selected_model]
+    st.write(f"🤖 Modelo seleccionado: **{model_name}** 🤖")
+    st.write("Introduce ingredientes y se generará una receta.")
 
     ingredientes = st.text_input("📋❓ Ingresa ingredientes separados por comas:")
 
@@ -17,7 +19,7 @@ def main():
             lista_ingredientes = [i.strip() for i in ingredientes.split(",")]
             with st.spinner("Generando receta... 👨‍🍳"):
                 receta_generada = generar_receta(lista_ingredientes, model_name)
-            st.subheader("😄🍽️ Receta Generada🍲😋:")
+            st.subheader("😄🍽️ Receta Generada 🍲😋:")
             st.write(receta_generada)
         else:
             st.warning("⚠️😤 Por favor, introduce al menos un ingrediente.")
