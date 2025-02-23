@@ -98,36 +98,32 @@ Para ejecutar correctamente la herramienta de detección de neumonía, siga los 
 
 # Uso de la interfaz gráfica
 
-Paso 1: Ejecutar la aplicación
-Abrir una terminal o línea de comandos en la carpeta donde se encuentra el archivo app.py.
-Escribir el siguiente comando y presionar Enter:
-- streamlit run app.py
-Esto abrirá automáticamente la interfaz gráfica en el navegador.
-
-Paso 2: Seleccionar el modelo de generación
+Paso 1: Seleccionar el modelo de generación
 En la parte superior de la interfaz, habrá un menú desplegable con las opciones de modelos de lenguaje disponibles.
 El usuario debe seleccionar el modelo con el que desea generar recetas.
 
-Paso 3: Ingresar los ingredientes
+![imagen 1](images/imagen_1.PNG)
+
+Paso 2: Ingresar los ingredientes
 En la caja de texto, el usuario debe escribir los ingredientes que tiene disponibles, separados por comas.
 Ejemplo:
 pollo, arroz, cebolla, zanahoria
 Si no ingresa ingredientes y presiona el botón, se mostrará un mensaje de advertencia.
 
-Paso 4: Generar la receta
+Paso 3: Generar la receta
 Presionar el botón "Generar Receta".
 La aplicación procesará los ingredientes y enviará la solicitud al modelo seleccionado.
 
-Paso 5: Visualizar la receta
+Paso 4: Visualizar la receta
 En la parte inferior de la interfaz, se mostrará la receta generada por el modelo.
 La receta incluirá los pasos de preparación basados en los ingredientes ingresados.
 
-Paso 6: Modificar ingredientes o modelo (opcional)
+Paso 5: Modificar ingredientes o modelo (opcional)
 Si el usuario no está satisfecho con la receta, puede:
 Cambiar los ingredientes y presionar nuevamente el botón "Generar Receta".
 Seleccionar otro modelo en el menú desplegable y probar con diferentes configuraciones.
 
-Paso 7: Cerrar la aplicación
+Paso 6: Cerrar la aplicación
 Para cerrar la aplicación, simplemente debe cerrar la pestaña del navegador.
 En la terminal, presionar Ctrl + C para detener la ejecución de Streamlit.
 
