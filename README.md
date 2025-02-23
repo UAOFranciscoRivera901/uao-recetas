@@ -98,6 +98,12 @@ Para ejecutar correctamente la herramienta de detección de neumonía, siga los 
 
 # Uso de la interfaz gráfica
 
+Paso 1: Ejecutar la aplicación
+Abrir una terminal o línea de comandos en la carpeta donde se encuentra el archivo app.py.
+Escribir el siguiente comando y presionar Enter:
+- streamlit run app.py
+Esto abrirá automáticamente la interfaz gráfica en el navegador.
+
 Paso 1: Seleccionar el modelo de generación
 En la parte superior de la interfaz, habrá un menú desplegable con las opciones de modelos de lenguaje disponibles.
 El usuario debe seleccionar el modelo con el que desea generar recetas.
@@ -124,6 +130,8 @@ La aplicación procesará los ingredientes y enviará la solicitud al modelo sel
 Paso 4: Visualizar la receta
 En la parte inferior de la interfaz, se mostrará la receta generada por el modelo.
 La receta incluirá los pasos de preparación basados en los ingredientes ingresados.
+
+![imagen 5](images/imagen_5.png)
 
 Paso 5: Modificar ingredientes o modelo (opcional)
 Si el usuario no está satisfecho con la receta, puede:
