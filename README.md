@@ -1,4 +1,4 @@
-# Herramienta para la detección rápida de neumonía
+# Herramienta para la generación de recetas de cocina.
 
 En este repositorio se presenta el desarrollo y creación de una herramienta basada en generación de texto, específicamente recetas de cocina, se establece el uso de los siguientes dos modelos de lenguaje, los cuales fueron seleccionados considerando su eficacia, su capacidad para generar texto en idioma español y los recursos computacionales disponibles:
 
@@ -98,7 +98,7 @@ Para ejecutar correctamente la herramienta de detección de neumonía, siga los 
 
 # Uso de la interfaz gráfica
 
-Paso 1: Ejecutar la aplicación
+## Paso 1: Ejecutar la aplicación
 Abrir una terminal o línea de comandos en la carpeta donde se encuentra el archivo app.py.
 Escribir el siguiente comando y presionar Enter:
 - streamlit run app.py
@@ -110,7 +110,7 @@ El usuario debe seleccionar el modelo con el que desea generar recetas.
 
 ![imagen 1](images/imagen_1.png)
 
-Paso 2: Ingresar los ingredientes
+## Paso 2: Ingresar los ingredientes
 En la caja de texto, el usuario debe escribir los ingredientes que tiene disponibles, separados por comas.
 Ejemplo:
 pollo, arroz, cebolla, zanahoria
@@ -121,24 +121,24 @@ Si no ingresa ingredientes y presiona el botón, se mostrará un mensaje de adve
 
 ![imagen 3](images/imagen_3.png)
 
-Paso 3: Generar la receta
+## Paso 3: Generar la receta
 Presionar el botón "Generar Receta".
 La aplicación procesará los ingredientes y enviará la solicitud al modelo seleccionado.
 
 ![imagen 4](images/imagen_4.png)
 
-Paso 4: Visualizar la receta
+## Paso 4: Visualizar la receta
 En la parte inferior de la interfaz, se mostrará la receta generada por el modelo.
 La receta incluirá los pasos de preparación basados en los ingredientes ingresados.
 
 ![imagen 5](images/imagen_5.png)
 
-Paso 5: Modificar ingredientes o modelo (opcional)
+## Paso 5: Modificar ingredientes o modelo (opcional)
 Si el usuario no está satisfecho con la receta, puede:
 Cambiar los ingredientes y presionar nuevamente el botón "Generar Receta".
 Seleccionar otro modelo en el menú desplegable y probar con diferentes configuraciones.
 
-Paso 6: Cerrar la aplicación
+## Paso 6: Cerrar la aplicación
 Para cerrar la aplicación, simplemente debe cerrar la pestaña del navegador.
 En la terminal, presionar Ctrl + C para detener la ejecución de Streamlit.
 
