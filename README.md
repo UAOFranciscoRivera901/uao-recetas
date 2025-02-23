@@ -108,11 +108,18 @@ Paso 2: Ingresar los ingredientes
 En la caja de texto, el usuario debe escribir los ingredientes que tiene disponibles, separados por comas.
 Ejemplo:
 pollo, arroz, cebolla, zanahoria
+
+![imagen 2](images/imagen_2.png)
+
 Si no ingresa ingredientes y presiona el botón, se mostrará un mensaje de advertencia.
+
+![imagen 3](images/imagen_3.png)
 
 Paso 3: Generar la receta
 Presionar el botón "Generar Receta".
 La aplicación procesará los ingredientes y enviará la solicitud al modelo seleccionado.
+
+![imagen 4](images/imagen_4.png)
 
 Paso 4: Visualizar la receta
 En la parte inferior de la interfaz, se mostrará la receta generada por el modelo.
