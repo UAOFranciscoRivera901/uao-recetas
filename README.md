@@ -6,7 +6,7 @@ En este repositorio se presenta el desarrollo y creación de una herramienta bas
 
 2. TinyLlama - 1.1B: es un modelo de generación de texto basado en la arquitectura LLaMA 2, diseñado para ser compacto y eficiente en hardware limitado. Con 1.1B de parámetros, fue optimizado mediante técnicas como reducción de capas y atención de consultas agrupadas, logrando un tamaño de 600MB en disco. Su entrenamiento incluyó 3 trillones de tokens y se realizó con 16 GPUs, usando datasets como Slim Pijama y Starcoderdata. Su principal aplicación es la generación de recetas de cocina a partir de ingredientes proporcionados por el usuario. Cuenta con licencia Apache 2.0, con restricciones sobre su uso y distribución.
 
-El repositorio incluye diversos scripts para cada una de las funciones de la herramienta, así como el módulo de integración. También se detallan los requisitos necesarios para su funcionamiento óptimo, las instrucciones de instalación, las pruebas unitarias realizadas para garantizar su correcto desempeño y la licencia correspondiente.
+El repositorio incluye diversos scripts para cada una de las funciones de la herramienta. También se detallan los requisitos necesarios para su funcionamiento óptimo, las instrucciones de instalación, las pruebas unitarias realizadas para garantizar su correcto desempeño y la licencia correspondiente.
 
 # Tabla de contenido
 - [Introducción](#introducción)
