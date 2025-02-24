@@ -81,7 +81,7 @@ Este script define la lógica de la interfaz de usuario en Streamlit. Proporcion
 Además, gestiona la comunicación con el modelo de generación de recetas y maneja posibles errores o advertencias para mejorar la experiencia del usuario.
 
 
-# Requerimientos para usar la herramienta de detección
+# Requerimientos para usar la Herramienta para la generación de recetas de cocina
 
 Para ejecutar correctamente Herramienta para la generación de recetas de cocina, siga los siguientes pasos:
 
