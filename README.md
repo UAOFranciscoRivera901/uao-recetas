@@ -150,7 +150,7 @@ La Dockerización es el proceso de empaquetar una aplicación junto con todas su
    
 Docker File es un archivo de texto que contiene una serie de instrucciones para construir una imagen de Docker, este se un archivo de texto que contiene una serie de instrucciones para construir una imagen de Docker, este archivo debe estar dentro de la raíz del proyecto y se configura de la siguiente manera:
 
-- Se usa una imagen base (se especifica la versión de Python) - (FROM python:3.11.9-slim)
+- Se usa una imagen base (se especifica la versión de Python) - (FROM python:3.12.2-slim)
 - Se instalan dependencias necesarias anexas en el requirements.txt
 
 2. Crear la imagen
