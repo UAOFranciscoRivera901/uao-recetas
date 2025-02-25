@@ -1,6 +1,6 @@
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
-from src.models.config import CONFIG_MODEL, MODEL_OPTIONS
+from src.models.config import CONFIG_MODEL
 
 def cargar_modelo(model_name):
     """Carga el modelo y el tokenizador para generación de texto."""
