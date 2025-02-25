@@ -1,4 +1,3 @@
-
 from src.models.config import MODEL_OPTIONS, CONFIG_MODEL
 
 def test_model_options():
